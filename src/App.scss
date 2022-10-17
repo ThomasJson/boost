@@ -7,8 +7,6 @@
   src: url(../public/fonts/Raleway-LightItalic.ttf);
 }
 * {
-  margin: 0 !important;
-  padding: 0 !important;
   box-sizing: border-box !important;
   font-family: "Raleway-Light";
 }
@@ -16,10 +14,16 @@
   width: auto !important;
 }
 button.btn.btn-primary {
-  background-color: white !important;
-  border-color: red !important;
-  border-radius: 0px !important;
-  color: red !important;
+  background-color: red !important;
+  border-color: white !important;
+  border-radius: 5px !important;
+  color: white !important;
+  padding: 10px !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+input {
+  padding: 10px !important;
 }
 a {
   text-decoration: none !important;
@@ -50,11 +54,20 @@ a {
 .margin-left {
   margin-left: 10px !important;
 }
+.margin-right {
+  margin-left: 10px !important;
+}
 .margin-top {
   margin-top: 10px !important;
 }
+.margin-bottom {
+  margin-bottom: 18px !important;
+}
 .border-Radius {
   border-radius: 4px !important;
+}
+.letter-spacing {
+  letter-spacing: 0.2rem;
 }
 
 @import "~bootstrap/scss/bootstrap";
