@@ -1,0 +1,34 @@
+.loginScreen-bloc {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-form-bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px !important;
+}
+.loginScreen-bloc svg {
+    font-size: 7em;
+    color: red;
+}
+.bloc-connexion {
+    padding: 10px !important;
+    margin-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.bloc-connexion form {
+    width: 100%;
+}
+.bloc-connexion input {
+    padding: 10px !important;
+}
+.bloc-connexion button {
+    padding: 10px !important;
+    width: 100% !important;
+}
