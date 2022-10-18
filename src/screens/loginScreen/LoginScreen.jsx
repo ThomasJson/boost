@@ -1,11 +1,39 @@
 import "./loginScreen.scss";
-import React from "react";
+import React, { useEffect } from "react";
 import { SiBitcoinsv } from "react-icons/si";
 import { Button, Container } from "react-bootstrap";
 import RegisterModal from "./RegisterModal";
+import axios from "axios";
 
 const LoginScreen = () => {
+  useEffect(() => {
+    // Hello Boost
+    axios.get("http://localhost:3000/").then((res) => console.log(res.data));
+    // Get JWT Token
+    axios
+      .post(
+        "http://localhost:3000/api/login",
+        { username: "pikachu", password: "pikachu" },
+        { headers: { "Content-Type": "application/json" } }
+      )
+      .then((res) => res.data)
+      .then((res) => {
+        console.log(res);
+        return res.token;
+      });
+    // .then((token) => fetchAccountList(token))
+  }, []);
+
+  // const fetchAccountList = (token) => {
+  //   return (
+  //     axios.get("http://localhost:3000/api/accounts"),
+  //     {
+  //       headers: { Authorization: `Bearer ${token}` },
+  //     }
+  //   ).then((res) => res.data).then((res) => console.log(res.data))
+  // };
   const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <>
       <Container fluid className="loginScreen-bloc">
