@@ -34,7 +34,7 @@ const RegisterModal = (props) => {
           <input
             className="margin-bottom"
             type="text"
-            placeholder="Pseudo ou Adresse e-mail"
+            placeholder="Adresse e-mail"
             name="email"
           />
           <input

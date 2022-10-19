@@ -9,9 +9,8 @@ const LoginScreen = () => {
   useEffect(() => {
     // Hello Boost
     axios.get("http://localhost:3000/").then((res) => console.log(res.data));
-    // Get JWT Token
-    axios
-      .post(
+    axios     
+      .post( // Get JWT Token
         "http://localhost:3000/api/login",
         { username: "pikachu", password: "pikachu" },
         { headers: { "Content-Type": "application/json" } }
