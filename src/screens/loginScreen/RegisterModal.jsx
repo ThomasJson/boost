@@ -42,7 +42,6 @@ const RegisterModal = (props) => {
             type="password"
             placeholder="Mot de passe"
             name="mp"
-            required
           />
           <label htmlFor="birthday">Date de naissance</label>
           <input
